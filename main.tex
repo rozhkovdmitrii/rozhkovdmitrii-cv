@@ -6,6 +6,10 @@
 
 \documentclass[letterpaper,11pt]{article}
 
+\usepackage[T2A]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[english, russian]{babel}
+
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -15,10 +19,15 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{hyphenat}
 \usepackage{fontawesome}
+
+
+\usepackage{ragged2e}
+\usepackage{blindtext}
+\usepackage{indentfirst}
+
 \input{glyphtounicode}
 
 
@@ -132,196 +141,73 @@
 %---------- HEADING ----------
 
 \begin{center}
-    \textbf{\Huge \scshape Aras Güngöre} \\ \vspace{3pt}
+    \textbf{\Huge \scshape Рожков Дмитрий} \\ \vspace{3pt}
+    \textbf{\large \scshape разрабочик rust} \\ \vspace{3pt}
     \small
-    \faMobile \hspace{.5pt} \href{tel:905314204536}{+90 531 420 4536}
+    \faMobile \hspace{.5pt} \href{tel:79292477436}{+7 929 2477436}
     $|$
-    \faAt \hspace{.5pt} \href{mailto:arasgungore09@gmail.com}{arasgungore09@gmail.com}
+    \faAt \hspace{.5pt} \href{mailto:rozhkovdmitrii@yandex.ru}{rozhkovdmitrii@yandex.ru}
     $|$
-    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/arasgungore}{LinkedIn}
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/dmitrii-rozhkov-596041107/}{LinkedIn}
     $|$
-    \faGithub \hspace{.5pt} \href{https://github.com/arasgungore}{GitHub}
+    \faGithub \hspace{.5pt} \href{https://github.com/rozhkovdmitrii}{GitHub}
     $|$
-    \faGlobe \hspace{.5pt} \href{https://arasgungore.github.io}{Portfolio}
-    $|$
-    \faMapMarker \hspace{.5pt} \href{https://www.google.com/maps/place/Bogazici+University+North+Campus/@41.0863067,29.0441352,15z/data=!4m5!3m4!1s0x0:0x9d2497b07c8edb2f!8m2!3d41.0863067!4d29.0441352}{Istanbul, Turkey}
+    \faMapMarker \hspace{.5pt} \href{https://goo.gl/maps/CAPxEvSmreu9ZjjHA}{Югорск, Россия}
 \end{center}
 
 
 
 %----------- EDUCATION -----------
 
-\section{Education}
+\section{Образование}
   \vspace{3pt}
   \resumeSubHeadingListStart
     
     \resumeEducationHeading
-      {Boğaziçi University
+      {Ульяновский Государственный Технический Университет УлГТУ
       % \normalfont{(Admission rate: 0.09\%)}
-      }{Istanbul, Turkey}
-      {B.Sc. in Electrical and Electronics Engineering;   \textbf{GPA: 3.73/4.00}}{Sep 2018 \textbf{--} Jun 2023 (Expected)}
-      {Minor Degree in Computer Engineering;   \textbf{GPA: 3.89/4.00}}{Oct 2020 \textbf{--} Jun 2023 (Expected)}
+      }{Ульяновск, Россия}
+      {Магистратура. Информатика и вычислительная техника }{Сентябрь 2003 \textbf{--} Июнь 2010}
+      {Информационное и программное обеспечение автоматизированных систем}{}
         % \resumeItemListStart
             % \resumeItem{\textbf{Relevant coursework:} Calculus I-II, Matrix Theory, Differential Equations, Materials Science, Electrical Circuits I-II, Digital System Design, Numerical Methods, Probability Theory, Electronics I-II, Signals and Systems, Electromagnetic Field Theory, Energy Conversion, System Dynamics and Control, Communication Engineering}
         % \resumeItemListEnd
     
-    \resumeSubheading
-      {Kocaeli Science High School
-      % \normalfont{(Admission rate: 0.85\%)}
-      }{Kocaeli, Turkey}
-      {High School Diploma;   \textbf{GPA: 97.03/100}}{Sep 2014 \textbf{--} Jun 2018}
     
   \resumeSubHeadingListEnd
 
+%----------- PROFILE -----------
 
 
-%----------- RESEARCH EXPERIENCE -----------
-
-\section{Research Experience}
-  \vspace{3pt}
-  \resumeSubHeadingListStart
   
-    \resumeSubheading
-      {Max Planck Institute for Intelligent Systems}{Stuttgart, Baden\textbf{-}Württemberg, Germany}
-      {Undergraduate Research Assistant}{Jun 2022 \textbf{--} Aug 2022}
-        \resumeItemListStart
-            \resumeItem{Worked in the Physical Intelligence Department with Sinan Özgün Demir and Alp Can Karacakol on a project about 3D printing and heat-assisted magnetic programming of soft machines.}
-            \resumeItem{Updated a ROS package for converting 3D motion controller events to ROS messages so that it synchronously operates at any given loop rate.}
-            \resumeItem{Implemented an Arduino Mega driver for controlling a fluid dispenser, a laser, thermocouples, and a coil set. Updated ROS nodes for parsing G-codes and controlling stage movement and built the ROS-Arduino communication network to simulate a 3D printing and magnetic programming process.}
-        \resumeItemListEnd
-    
-    \resumeSubheading
-      {Nanonetworking Research Group, Boğaziçi University}{Istanbul, Turkey}
-      {Undergraduate Research Assistant}{Oct 2021 \textbf{--} Present}
-        \resumeItemListStart
-            \resumeItem{Currently working with Assoc. Prof. Ali Emre Pusane on the project “Design and Implementation of Molecular Communication Systems Using Index Modulation” under the TÜBİTAK 2247-C Intern Researcher Scholarship Program (STAR).}
-            \resumeItem{Simulated the Brownian motion of molecules in a SISO MCvD system and predicted simulation parameters such as receiver radius, diffusion coefficient, and transmitter-receiver distance using CNNs with Python.}
-            \resumeItem{Plotted the arrival of molecules per symbol duration in a SISO MCvD system using Binomial, Poisson, and Gaussian model approximations with MATLAB.}
-            \resumeItem{Ran Monte Carlo simulations of the Gaussian model to encode/decode randomized binary sequences in a SISO MCvD system using BCSK modulation technique and calculated the bit error rate (BER) on Z-channel.}
-        \resumeItemListEnd
-    
-  \resumeSubHeadingListEnd
+\section{Профиль}
+\vspace{3pt}
+\justifying
+\setlength{\parindent}{10pt}
 
-
-
-%----------- WORK EXPERIENCE -----------
-
-\section{Work Experience}
-  \vspace{3pt}
-  \resumeSubHeadingListStart
-    
-    \resumeSubheading
-      {SESTEK Speech Enabled Software Technologies}{Istanbul, Turkey}
-      {Natural Language Processing R\&D Intern}{Jan 2022 \textbf{--} Feb 2022}
-        \resumeItemListStart
-            \resumeItem{Implemented common NLP tasks using transformers such as named-entity recognition (NER), part-of-speech (POS) tagging, sentiment analysis, text classification, and extractive/generative question answering.}
-            \resumeItem{Built a generative question answering system via Dense Passage Retrieval (DPR) and Retrieval-Augmented Generation (RAG) using the Haystack framework with Python.}
-            \resumeItem{Worked on a custom Turkish open-domain question answering system by fine-tuning a BERT base model transformer. Evaluated the exact match and F1 scores using different Turkish data sets and compared the evaluation results.}
-        \resumeItemListEnd
-    
-    % \resumeSubheading
-      % {Ankara Metropolitan Municipality}{Ankara, Turkey}
-      % {SCADA Engineering Intern}{Aug 2021 \textbf{--} Sep 2021}
-        % \resumeItemListStart
-            % \resumeItem{Designed GSM/GPRS-based electrical control panels that are connected to local water pump automation systems. Pump station panels use digital output data received from the SCADA control center via RF transmission to control valves and pumps. Tank station panels are charged from the PV system and refill water tanks by signaling the pump station panel when the float switch is activated.}
-            % \resumeItem{Implemented motor control circuits by reading their PLC ladder diagrams and analyzed the EPLAN project documentation, HMI, and hardware components of an RTU panel.}
-        % \resumeItemListEnd
-
-    % \vspace{15pt}
-    \resumeSubheading
-      {Meteksan Defense Industry Inc.}{Ankara, Turkey}
-      {Analog Design Engineering Intern}{Jul 2021 \textbf{--} Aug 2021}
-        \resumeItemListStart
-            \resumeItem{Designed numerous analog circuits such as voltage-mode controlled buck converter, phase-shifted full-bridge isolated DC-DC converter, and EMI filters with LTspice. Integrated these circuits and implemented a 320 W power distribution unit to be used in a radar system's power circuit board.}
-            \resumeItem{Researched real-world compatible electronic components to be used in such circuits including GaNFETs, high-side gate drivers, and Schottky diodes.}
-            \resumeItem{Assembled PCBs of both common and differential mode filters and used VNA Bode 100 to measure the cut-off frequencies.}
-        \resumeItemListEnd
-    
-  \resumeSubHeadingListEnd
-
-
-
-%----------- AWARDS & ACHIEVEMENTS -----------
-
-\section{Awards \& Achievements}
-  \vspace{2pt}
-  \resumeSubHeadingListStart
-    \small{\item{
-        \textbf{National University Admission Exam (YKS):}{ Ranked $75^{th}$ in Mathematics and Science among ca. 2.3 million candidates with a test score of 489.92/500.} \\ \vspace{3pt}
-        
-        \textbf{KYK Outstanding Success Scholarship:}{ Awarded to undergraduate students who have been ranked in the top 100 on National University Admission Exam by Higher Education Credit and Hostels Institution (KYK).} \\ \vspace{3pt}
-        
-        \textbf{Boğaziçi University Success Scholarship:}{ Awarded to undergraduate students who have been ranked in the top 100 on National University Admission Exam by Boğaziçi University.} \\ \vspace{3pt}
-        
-        \textbf{TÜBİTAK 2247-C Intern Researcher Scholarship:}{ Awarded to undergraduate students who take part in research projects carried out by the Scientific and Technological Research Council of Turkey (TÜBİTAK).} \\ \vspace{3pt}
-        
-        \textbf{Duolingo English Test (DET):}{ Overall Score: 135/160} \\ \vspace{3pt}
-        
-        % \textbf{Boğaziçi University English Proficiency Test (BUEPT):}{ Achieved the highest grade A on the BUEPT grading scheme with a total score in the range of 85-100.} \\ \vspace{3pt}
-        
-        \textbf{Kocaeli Science High School Salutatorian Award:}{ Graduated as the second-highest ranked student in my class.}
-    }}
-  \resumeSubHeadingListEnd
-
-
-
-%----------- PROJECTS -----------
-
-\section{Projects}
-    \vspace{3pt}
-    \resumeSubHeadingListStart
-      
-      \resumeProjectHeading
-        {\textbf{Filters and Fractals} $|$ \emph{\href{https://github.com/arasgungore/filters-and-fractals}{\color{blue}GitHub}}}{}
-          \resumeItemListStart
-            \resumeItem{A C project which implements a variety of image processing operations that manipulate the size, filter, brightness, contrast, saturation, and other properties of PPM images from scratch.}
-            \resumeItem{Added recursive fractal generation functions to model popular fractals including Mandelbrot set, Julia set, Koch curve, Barnsley fern, and Sierpinski triangle in PPM format.}
-          \resumeItemListEnd
-      
-      \resumeProjectHeading
-        {\textbf{Chess Bot} $|$ \emph{\href{https://github.com/arasgungore/chess-bot}{\color{blue}GitHub}}}{}
-          \resumeItemListStart
-            \resumeItem{A C++ project in which you can play chess against an AI with a specified decision tree depth that uses alpha-beta pruning algorithm to predict the optimal move.}
-            \resumeItem{Aside from basic moves, this mini chess engine also implements chess rules such as castling, en passant, fifty-move rule, threefold repetition, and pawn promotion.}
-          \resumeItemListEnd
-      
-      \resumeProjectHeading
-        {\textbf{Rocket Flight Simulator} $|$ \emph{\href{https://github.com/arasgungore/rocket-flight-simulator}{\color{blue}GitHub}}}{}
-          \resumeItemListStart
-            \resumeItem{A Simulink project which can accurately simulate the motion of a flying rocket in one-dimensional space.}
-            \resumeItem{The project implements the forces acting on a rocket which are drag, weight, and thrust as subsystems that take time-variant parameters into consideration such as distance from the center of Earth, mass and velocity of the rocket, and air density at different layers of Earth's atmosphere.}
-          \resumeItemListEnd
-      
-      \resumeProjectHeading
-        {\textbf{Netlist Solver} $|$ \emph{\href{https://github.com/arasgungore/netlist-solver}{\color{blue}GitHub}}}{}
-          \resumeItemListStart
-            \resumeItem{A MATLAB project that uses modified nodal analysis (MNA) algorithm to calculate the node voltages of any analog circuit without dependent sources given in netlist format.}
-            \resumeItem{Added a module that sweeps the resistance of a load resistor, plots power dissipation as a function of load resistance, and finds the resistance value corresponding to maximum power.}
-          \resumeItemListEnd
-      
-      \resumeProjectHeading
-        {\textbf{CMPE 250 Projects} $|$ \emph{\href{https://github.com/arasgungore/CMPE250-projects}{\color{blue}GitHub}}}{}
-          \resumeItemListStart
-            \resumeItem{Five Java projects assigned for the Data Structures and Algorithms (CMPE 250) course in the Fall 2021-22 semester.}
-            \resumeItem{These projects apply DS\&A concepts such as discrete-event simulation (DES) using priority queues, Dijkstra's shortest path algorithm, Prim's algorithm to find the minimum spanning tree (MST), Dinic's algorithm for maximum flow problems, and weighted job scheduling with dynamic programming to real-world problems.}
-          \resumeItemListEnd
-      
-    \resumeSubHeadingListEnd
-
-
+Бэкенд разработчик с более чем 12-летним стажем. Имею опыт преимущественно в сетях, финтехе и блокчейне. В настоящем предпочитаю проекты на Rust и c++, также хорошо владею Python - есть крупные проекты. Не пренебрегаю чистым кодом и принципами SOLID, практикую Design Driven Development. С увлечением решаю задачи Devops. Способен организовать работу маленькой команды. Ценю культуру интенсивного вознаграждаемого труда. Хорошо организован, общителен, сохраняю разумный баланс между внутренним качеством и потребностями бизнеса для блага компании.
 
 %----------- SKILLS -----------
 
-\section{Skills}
-  \vspace{2pt}
+\section{Навыки}
+  \vspace{3pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{Programming:}{ C, C++, Java, Python, MATLAB, R, MySQL, VHDL} \\ \vspace{3pt}
-        
-        \textbf{Technologies:}{ Git, Arduino, ROS, Simulink, LTspice, Xilinx ISE} \\ \vspace{3pt}
-        
-        \textbf{Languages:}{ Turkish (Native), English (Professional), German (Elementary)}
-        
+        \textbf{Языки:}{ rust, c++, python; solidity, pine-script(Trading View), java-script, action-script, lisp, assembler } \\
+        \textbf{Техники и инструменты: }\begin{itemize}[topsep=0pt,itemsep=0.1pt]
+            \item\textbf{Сборка: }{ cargo, cmake, qmake, GNU make; sanitizing}
+            \item\textbf{Тестирование и отладка: }{ mock-all, google test, google mock, boost test framework, cucumber; wireshark, netcat, tcpreplay, strace; TDD/BDD }
+            \item\textbf{Очереди: }{kafka }
+            \item\textbf{БД: }{postgreSQL, clickhouse, prometheus, mysql, firebird, mongodb }
+            \item\textbf{Контроль версий: }{git, svn, mercurial}
+            \item\textbf{CI/CD: }{buildkite, GitHub Actions}
+            \item\textbf{Виртуализация: }{vagrant, docker, docker-compose}
+            \item\textbf{Solana: }{Solana Program Library, Metaplex Program Library, Address Lookup Tables и т.д.}
+            \item\textbf{Ethereum: }{solidity, truffle, hardhat}
+            \item\textbf{Документация: }{ Docosaurus, Pelican }
+            \item\textbf{Системы аналитики: }{ Google analytics, Matomo }
+        \end{itemize}
+        \textbf{Иностранные языки:}{ English B2..C1 Upper Intermediate } 
         % \textbf{Frameworks}{: X, X, X} \\
         % \textbf{Developer Tools}{: X, X, X} \\
         % \textbf{Libraries}{: X, X, X} \\
@@ -330,62 +216,95 @@
   \resumeSubHeadingListEnd
 
 
+%----------- WORK EXPERIENCE -----------
 
-%----------- RELEVANT COURSEWORK -----------
-
-\section{Relevant Coursework}
-  \vspace{2pt}
+\section{История}
+  \vspace{3pt}
   \resumeSubHeadingListStart
-    \small{\item{
-        \textbf{Major coursework:}{ Calculus I-II, Matrix Theory, Differential Equations, Materials Science, Electrical Circuits I-II, Digital System Design, Numerical Methods, Probability Theory, Electronics I-II, Signals and Systems, Electromagnetic Field Theory, Energy Conversion, System Dynamics and Control, Communication Engineering} \\ \vspace{3pt}
-        
-        \textbf{Minor coursework:}{ Discrete Computational Structures, Introduction to Object-Oriented Programming, Data Structures and Algorithms}
-    }}
-  \resumeSubHeadingListEnd
-
-
-
-%----------- CERTIFICATES -----------
-
-% \section{Certificates}
-  % \resumeSubHeadingListStart
     
-    % \resumeOrganizationHeading
-      % {Procter \& Gamble VIA Certificate Program}{Feb 2022}{Business Skills, Data and Digital Skills, Project Management and Personal Productivity}
-    
-  % \resumeSubHeadingListEnd
+    \resumeSubheading
+        {\emph{\href{http://itpo.group/}{\color{blue}ITPO group}}}{International, Dubai}
+        {Стартап. Реализация токеномики и управления NFT на маркетплейсе \emph{\href{https://www.myseven.io/}{\color{blue}My Seven}}}{Декабрь 2022 \textbf{--} до наст. времени}
+        \resumeItemListStart
+            \resumeItem{Разработка ендпойнта токеномики: минтинг, переводы, бёрн и т.д.}
+            \resumeItem{Разработка ендпойнта управления NFT}
+        \resumeItemListEnd
+        Rust, Solana Program Library, Metaplex Program Library.
+
+    \resumeSubheading
+      {Hana proxy}{International, Dubai}
+      {Стартап. L2 Ethterum-совместимый блокчейн на базе \emph{\href{https://sui.io}{\color{blue}Sui}}}{Сентябрь 2022 \textbf{--} Ноябрь 2022}
+        \resumeItemListStart
+            \resumeItem{Интеграция мемпула Openethereum }
+            \resumeItem{Организация RPC API}
+            \resumeItem{Организация CI (GitHub Actions)}
+        \resumeItemListEnd
+      Rust, Tokio    
+
+    \resumeSubheading
+      {\emph{\href{http://neonlabs.org/}{\color{blue}Neon labs}}}{International, Lisbon}
+      {Стартап. Neon EVM. L2 Ethterum-совместимый блокчейн на базе \emph{\href{https://solana.com}{\color{blue}Solana}}}{Сентябрь 2021 \textbf{--} Сентябрь 2022}
+        \resumeItemListStart
+            \resumeItem{ Переработка архитектуры RPC API прокси, организация межпроцессного взаимодействия (asyncio, tcp, pickle) }
+            \resumeItem{ Организация системы логирования. (python, asyncio, vector, elastic search, kebana) }
+            \resumeItem{ Организация, пуск и наладка полного набора тестов (Buildkite)}
+            \resumeItem{ Сбор метрик. (Prometheus)}
+            \resumeItem{ Активное участие в создании \emph{\href{https://docs.neonlabs.org}{\color{blue}документации}}. (Docosaurus)}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {\emph{\href{http://https://infatica.io/}{\color{blue}Infatica}}}{International, Singapore}
+      {Разработка сетевых сервисов и библиотек, проекты HFT }{Август 2020 \textbf{--} Август 2021}
+        \resumeItemListStart
+            \resumeItem{ \textbf{Infatica http proxy server.} Оптимизация performance и потребления памяти, кольцевые буферы, адаптация исходников nginx (c++, nginx sources, libevent, google mock) }
+            \resumeItem{ \textbf{Infatica SDK. } Библиотека и API прокси-ноды для приложений партнеров. (c++, Qt, google mock, google analytics, matomo) }
+            \resumeItem{ \textbf{Infatica Android SDK. } Библиотека и API прокси-ноды для android приложений партнеров. (c++, Qt, JNI)}
+            \resumeItem{ \textbf{Infatica trading-desk. } Разработка торговой системы. Дизайн, оперативное управление и реализация базовых стратегий и торгового ядра. (python, asyncio: loops; queue, plotly dash, pandas, clickhouse, trading view pinescript) }
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {\emph{\href{https://iskrauraltel.ru/ru/}{\color{blue}ИскраУралТел}}}{Россия, Екатеринбург}
+      {Разработка сетевых сервисов и библиотек, проекты HFT }{Июнь 2017 \textbf{--} Август 2020}
+        \resumeItemListStart
+            \resumeItem{ СОРМ - системы оперативно разызкных мероприятий на телефонных и ip-сетях. Средства: декодирования, транскодирования, упорядочивания, шифрования, сброса, управления временем жизни, хранения статистики и полезной нагрузки различных протоколов и содержимого в соответствии с российским и европейским законодательством (stl, boost, libcurl, libcrypt и т.д.). Тестирование их (gooble test и mock). Предоставление тестовой среды telecomunicaton (docker, freeradius server, netcat и т.д.) Создание межпроцессных связей, основанных, как правило, на ASN1 или protobuf. Создание графического интерфейса для управления и отладки перехвата в деталях (Qt).}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {\emph{\href{https://iskrauraltel.ru/ru/}{\color{blue}Газпром Трансгаз Югорск}}}{Россия, Югорск}
+      {Разработка корпоративных систем управления }{Май 2012 \textbf{--} Август 2017}
+        \resumeItemListStart
+            \resumeItem{ Заработной плата и бухгалтерии (1с 7.7) }
+            \resumeItem{ Планирование и логистика МТР (1с 8.3, javascript) }
+        \resumeItemListEnd
 
 
-
-%----------- ORGANIZATIONS -----------
-
-% \section{Organizations}
-  % \resumeSubHeadingListStart
-    
-    % \resumeOrganizationHeading
-      % {Institute of Electrical and Electronics Engineers (IEEE)}{Feb 2022 -- Present}{Student Member}
-    
-  % \resumeSubHeadingListEnd
+    \resumeSubheading
+      {\emph{\href{https://simbirsoft.com}{\color{blue}Simbirsoft}}}{Россия, Ульяновск}
+      {Проект FXCM}{Ноябрь 2010 \textbf{--} Май 2012}
+        \resumeItemListStart
+            \resumeItem{ Currency management operations transport layer (c++, xslt, libtpt),
+GUI with Adobe Flex SDK(action script) }
+        \resumeItemListEnd
 
 
+    \resumeSubheading
+      {\emph{\href{https://simbirsoft.com}{\color{blue}ООО Полюс-сервис}}}{Россия, Ульяновск}
+      {Стартап. Сервисы электронной торговли и интернет аналитики}{Октябрь 2009 \textbf{--} Ноябрь 2010}
+        \resumeItemListStart
+            \resumeItem{ Система интернет-аналитики. Реализация серверной части, обработка, ранжирование, сохранение данных аналитики (c++, qt-network, qt-service, qt-sql и др). Реализация встраиваемого агента (JavaScript).}
+            \resumeItem{ Система поддержки бизнес-процессов электронной торговли «Полюс» и интернет-магазин бытовой техники \emph{\href{https://polus73.ru/}{\color{blue}«Полюс»}} - poluscompany.com (php, mysql, jquery, pure) }
+        \resumeItemListEnd
 
-%----------- HOBBIES -----------
+    \resumeSubheading
+      {\emph{\href{https://ulstu.ru/}{\color{blue}УлГТУ}}}{Россия, Ульяновск}
+      {Сопровождение кластера информационно-вычислительного центра}{Сентябрь 2007 \textbf{--} Октябрь 2009}
+        \resumeItemListStart
+            \resumeItem{ Внедрение высокопроизводительного компьютерного кластера в образовательный процесс (Microsoft HPC Pack SDK, Microsoft HPC Server, mpich 1.2.5, c++, MPI, алгоритм RSA)}
+            \resumeItem{ Веб-сайт панели управления кластером (PHP, сервер Microsoft HPC) }
+        \resumeItemListEnd
 
-% \section{Hobbies}
-  % \resumeSubHeadingListStart
-    % \small{\item{Swimming, Fitness, Eight-ball}}
-  % \resumeSubHeadingListEnd
+        \resumeSubHeadingListEnd
 
-
-
-%----------- REFERENCES -----------
-
-% \section{References}
-  % \resumeSubHeadingListStart
-    
-  % \resumeSubHeadingListEnd
-
-
-
+%----------- AWARDS & ACHIEVEMENTS -----------
 %-------------------------------------------
 \end{document}
