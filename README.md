@@ -1,15 +1,14 @@
-# arasgungore-CV
+# rozhkovdmitrii-CV
 
 My curriculum vitae (CV) written using LaTeX. In my CV, you may find my contact information, websites, education, experience, achievements, projects, and skills.
 
-Please find attached my [CV](https://drive.google.com/file/d/1TGwMpZl6FDeQk1w_-EetbspCuzu16kCF/view?usp=sharing). 😜
 
 
 
 ## Run on Terminal
 
 ```sh
-pdflatex main.tex
+pdflatex -jobname rozhkovdmitrii main.tex
 ```
 
 
@@ -25,7 +24,7 @@ pdflatex main.tex
 
 ## Author
 
-👤 **Aras Güngöre**
+👤 **Rozhkov Dmitrii**
 
-* LinkedIn: [@arasgungore](https://www.linkedin.com/in/arasgungore)
-* GitHub: [@arasgungore](https://github.com/arasgungore)
+* LinkedIn: [@rozhkovdmitrii](https://www.linkedin.com/in/dmitrii-rozhkov-596041107/)
+* GitHub: [@rozhkovdmitrii](http://github.com/rozhkovdmitrii)
