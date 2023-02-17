@@ -16,7 +16,7 @@ pdflatex -jobname rozhkovdmitrii main.tex
 ## Screenshots
 
 <p align="center">
-    <img alt="Screenshot" src="https://raw.githubusercontent.com/rozhkovdmitrii/rozhkovdmitrii-cv/main/jpg/perview.jpg" width="400">
+    <img alt="Screenshot" src="https://raw.githubusercontent.com/rozhkovdmitrii/rozhkovdmitrii-cv/main/jpg/preview.jpg" width="400">
 </p>
 
 
