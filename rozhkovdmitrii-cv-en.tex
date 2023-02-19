@@ -1,0 +1,318 @@
+%-------------------------
+% Resume in Latex
+% Author : Aras Gungore
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[english, russian]{babel}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+
+
+\usepackage{ragged2e}
+\usepackage{blindtext}
+\usepackage{indentfirst}
+
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \scshape Rozhkov Dmitrii} \\ \vspace{3pt}
+    \textbf{\large \scshape Rust software developer} \\ \vspace{3pt}
+    \small
+    \faMobile \hspace{.5pt} \href{tel:79292477436}{+7 929 2477436}
+    $|$
+    \faAt \hspace{.5pt} \href{mailto:rozhkovdmitrii@yandex.ru}{rozhkovdmitrii@yandex.ru}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/dmitrii-rozhkov-596041107/}{LinkedIn}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/rozhkovdmitrii}{GitHub}
+    $|$
+    \faMapMarker \hspace{.5pt} \href{https://goo.gl/maps/CAPxEvSmreu9ZjjHA}{Yugorsk, Russia}
+\end{center}
+
+
+
+%----------- EDUCATION -----------
+
+\section{Education}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    \resumeEducationHeading
+      {Ulyanovsk State Technical University
+      % \normalfont{(Admission rate: 0.09\%)}
+      }{Ulyanovsk, Russia}
+      {Master degree in Computer Science and Facilities }{Sep 2003 \textbf{--} Jun 2010}
+      {}{}
+        % \resumeItemListStart
+            % \resumeItem{\textbf{Relevant coursework:} Calculus I-II, Matrix Theory, Differential Equations, Materials Science, Electrical Circuits I-II, Digital System Design, Numerical Methods, Probability Theory, Electronics I-II, Signals and Systems, Electromagnetic Field Theory, Energy Conversion, System Dynamics and Control, Communication Engineering}
+        % \resumeItemListEnd
+    
+    
+  \resumeSubHeadingListEnd
+
+%----------- PROFILE -----------
+
+
+  
+\section{Profile}
+\vspace{3pt}
+\justifying
+\setlength{\parindent}{10pt}
+
+I am a more than 12 years experienced back-end developer. I have a background mainly in  network and fin-tech services, blockchain. Currently prefer Rust and C++ but also quite good at python - have several projects written on python. I'm fond of Clean Code, SOLID principles and Design Driven Development.
+Able to establish processes and manage small team. I'm looking for company of hard-working and well rewarding labor culture. I'm self-organized and outgoing person, always able to find a balance between quality and rushing for the quick result for the company sake.
+
+%----------- SKILLS -----------
+
+\section{Skills}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Computer languages:}{ Rust, C++, Python, pine-script(Trading View), solidity, java-script, action-script, lisp, assembler } \\
+        \textbf{Tooling: }\begin{itemize}[topsep=0pt,itemsep=0.1pt]
+            \item\textbf{Build: }{ cargo, cmake, qmake, GNU make; sanitizing}
+            \item\textbf{Test and Debug: }{ mock-all, google test, google mock, boost test framework, cucumber; wireshark(tshark), netcat, tcpreplay, strace; TDD/BDD }
+            \item\textbf{Queues: }{kafka }
+            \item\textbf{DB: }{postgreSQL, clickhouse, prometheus, mysql, firebird, mongodb }
+            \item\textbf{Version control: }{git, svn, mercurial}
+            \item\textbf{CI/CD: }{buildkite, GitHub Actions}
+            \item\textbf{Virtualization: }{vagrant, docker, docker-compose}
+            \item\textbf{Solana: }{Solana Program Library, Metaplex Program Library, Address Lookup Tables и т.д.}
+            \item\textbf{Ethereum: }{solidity, truffle, hardhat}
+            \item\textbf{Documentation: }{ Docosaurus, Pelican }
+            \item\textbf{Analytic and logs: }{ Prometheus, Elastic Search(Kebana), Google analytics, Matomo; \emph{\href{https://vector.dev/}{\color{blue}Vector}} }
+        \end{itemize}
+        \textbf{Foreign languages:}{ English B2 Upper Intermediate } 
+    }}
+  \resumeSubHeadingListEnd
+
+
+%----------- WORK EXPERIENCE -----------
+
+\section{Employment History}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+        {\emph{\href{http://itpo.group/}{\color{blue}ITPO group}}}{International, Dubai}
+        {Making \emph{\href{https://www.myseven.io/}{\color{blue}My Seven}} platform that is aimed to provide efficient celebrity and fun base relations.}{Dec 2022 \textbf{--} present}
+        \resumeItemListStart
+            \resumeItem{Tokenomica service}
+            \resumeItem{NFT managament service}
+        \resumeItemListEnd
+        Rust, Solana Program Library, Metaplex Program Library.
+
+
+    \resumeSubheading
+      {Hana proxy}{International, Dubai}
+      {L2 Ethterum-compatible middleware based on \emph{\href{https://sui.io}{\color{blue}Sui}}}{Sep 2022 \textbf{--} Nov 2022}
+        \resumeItemListStart
+            \resumeItem{Introducing \emph{\href{https://github.com/openethereum/parity-ethereum}{\color{blue}Openethereum}}'s mempool}
+            \resumeItem{RPC API (jsonrpc)}
+            \resumeItem{CI (GitHub Actions)}
+        \resumeItemListEnd
+      Rust, Tokio    
+\pagebreak
+    \resumeSubheading
+      {\emph{\href{http://neonlabs.org/}{\color{blue}Neon labs}}}{International, Lisbon}
+      {L2 Ethterum-compatible middleware based on \emph{\href{https://solana.com}{\color{blue}Solana}}}{Sep 2021 \textbf{--} Sep 2022}
+        \resumeItemListStart
+            \resumeItem{ Restructuring design, IPC network layer of \emph{\href{https://github.com/neonlabsorg/proxy-model.py}{\color{blue}Neon Proxy}} (asyncio, tcp, pickle) }
+            \resumeItem{ Logging system (python, asyncio, vector, elastic search, kebana) }
+            \resumeItem{ Full test suite (Buildkite)}
+            \resumeItem{ Analytics gathering. (Prometheus)}
+            \resumeItem{ \emph{\href{https://docs.neonlabs.org}{\color{blue}Documentation}}. (Docosaurus)}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {\emph{\href{http://https://infatica.io/}{\color{blue}Infatica}}}{International, Singapore}
+      {Разработка сетевых сервисов и библиотек, проекты HFT }{Aug 2020 \textbf{--} Aug 2021}
+        \resumeItemListStart
+            \resumeItem{ \textbf{Infatica http proxy server: } ring buffer based http server (c++, nginx sources, libevent, google mock) }
+            \resumeItem{ \textbf{Infatica SDK: } library to be plugged into a desktop app to provide a proxy node (C++, Qt, google mock, google analytics, matomo) }
+            \resumeItem{ \textbf{Infatica Android SDK: } aar to be plugged into a Android app to provice a proxy node, reasearch and development. (C++, Qt, JNI)}
+            \resumeItem{ \textbf{Infatica trading-desk: } a trading platform, design, management, research on strategies, implementing (python, asyncio, plotly dash, pandas, clickhouse, trading view hooks \& pinescript, Finam api)}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {\emph{\href{https://iskrauraltel.ru/ru/}{\color{blue}IskraUralTel}}}{Russia, Yekaterinburg}
+      {Lawful interception systems on telephone and ip networks}{Jun 2017 \textbf{--} Aug 2020}
+        \resumeItemListStart
+            \resumeItem{ Development facilites for: decoding, transcoding, arranging, encrypting, dumping, life-time management, storing statistics and payload of variety protocols and contents accordingly Russian and European laws (stl, boost, libcurl, libcrypt etc.). Testing them (gooble test and mock). Providing testing telecomunicaton environment (docker, freeradius server, netcat etc.) Making of interprocess communications, based, generally, on ASN1 and Google Protobuf. Making GUI to manage and debug interception in details (Qt).}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {\emph{\href{https://yugorsk-tr.gazprom.ru/}{\color{blue}Gazprom Transgas Yugorsk}}}{Russia, Yugorsk}
+      {Corporate management systems}{May 2012 \textbf{--} Aug 2017}
+        \resumeItemListStart
+            \resumeItem{ Logistic and carrying planning processes automation (1сEnterprise 8.3, javascript). }
+            \resumeItem{ Payroll and accounting processes automation (1C Enterprise 7.7) }
+        \resumeItemListEnd
+
+
+    \resumeSubheading
+      {\emph{\href{https://simbirsoft.com}{\color{blue}Simbirsoft}}}{Russia, Ulyanovsk}
+      {\emph{\href{https://www.fxcm.com/markets/}{\color{blue}FXCM}} - project}{Nov 2010 \textbf{--} May 2012}
+        \resumeItemListStart
+        \resumeItem{ Currency management operations transport layer (C++, xslt, libtpt) }
+        \resumeItem{ GUI with Adobe Flex SDK (action script) }
+        \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Polus-Service LLC.}{Russia, Ulyanovsk}
+      {e-commerce services and web analytics systems}{Oct 2009 \textbf{--} Nov 2010}
+        \resumeItemListStart
+            \resumeItem{ Web sites analytic system. Server-side – processing, ranging and saving properly analytic packages(c++, qt-network, qt-service, qt-sql и др). Web site analytic agent (JavaScript) }
+            \resumeItem{ Household appliances trading processes maintenance system and online-store \emph{\href{https://polus73.ru/}{\color{blue}«Polus»}} (php, mysql, jquery, pure.js) }
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {\emph{\href{https://ulstu.ru/}{\color{blue} Ulyanovsk State Technical University}}}{Russia, Ulyanovsk}
+      {Computer center of computer science faculty}{Sep 2007 \textbf{--} Okt 2009}
+        \resumeItemListStart
+            \resumeItem{ Adopting High performance computer cluster in educational process (Microsoft HPC Pack SDK, Microsoft HPC Server, mpich 1.2.5, c++, MPI , RSA algorithm)}
+            \resumeItem{ Cluster Management Panel Web Site (PHP, Microsoft HPC Server) }
+        \resumeItemListEnd
+
+        \resumeSubHeadingListEnd
+
+%----------- PET PROJECTS -----------
+
+\section{My Own Projects}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{Python logged groups} $|$ \emph{\href{https://github.com/rozhkovdmitrii/python-logged-groups}{\color{blue}GitHub}}}{}
+        \item{This package designed to facilitate logging inside classes and functions with @logged\_group decorator and also makes it possible to manage logging level and any different things for any logging domain mentioned in log\_cfg.json}
+    \resumeSubHeadingListEnd
+
+        
+%-------------------------------------------
+\end{document}
