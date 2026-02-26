@@ -142,7 +142,7 @@
 
 \begin{center}
     \textbf{\Huge \scshape Rozhkov Dmitrii} \\ \vspace{3pt}
-    \textbf{\large \scshape Rust software developer} \\ \vspace{3pt}
+    \textbf{\large \scshape Rust/Go/C++ software developer} \\ \vspace{3pt}
     \small
     \faMobile \hspace{.5pt} \href{tel:79292477436}{+7 929 2477436}
     $|$
@@ -185,7 +185,7 @@
 \justifying
 \setlength{\parindent}{10pt}
 
-I am a more than 12 years experienced back-end developer. I have a background mainly in  network and fin-tech services, blockchain. Currently prefer Rust and C++ but also quite good at python - have several projects written on python. I'm fond of Clean Code, SOLID principles and Design Driven Development.
+I am a more than 19 years experienced back-end developer. I have a background mainly in  network and fin-tech services, blockchain. Currently prefer Rust and C++ but also quite good at python - have several projects written on python. I'm fond of Clean Code, SOLID principles and Design Driven Development.
 Able to establish processes and manage small team. I'm looking for company of hard-working and well rewarding labor culture. I'm self-organized and outgoing person, always able to find a balance between quality and rushing for the quick result for the company sake.
 
 %----------- SKILLS -----------
@@ -194,20 +194,20 @@ Able to establish processes and manage small team. I'm looking for company of ha
   \vspace{3pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{Computer languages:}{ Rust, C++, Python, pine-script(Trading View), solidity, java-script, action-script, lua, lisp, assembler } \\
+        \textbf{Computer languages:}{ Rust, Go, C++, Python, pine-script(Trading View), solidity, java-script, action-script, lua, lisp, assembler } \\
         \textbf{Tooling: }\begin{itemize}[topsep=0pt,itemsep=0.1pt]
             \item\textbf{Rust: }{ clap, serde, tokio, syn/quote }
             \item\textbf{Build: }{ cargo, cmake, qmake, GNU make}
             \item\textbf{Test and Debug: }{ sanitizing, mock-all, google test, google mock, boost test framework, cucumber; wireshark(tshark), netcat, [t|wire]shark, tcpreplay, tcpdump, lsof, gdb, strace; TDD/BDD }
-            \item\textbf{Queues: }{kafka }
+            \item\textbf{Queues: }{Kafka, RabbitMQ}
             \item\textbf{DB: }{postgreSQL, clickhouse, prometheus, mysql, firebird, mongodb, tarantool }
             \item\textbf{Version control: }{git, svn, mercurial}
-            \item\textbf{CI/CD: }{buildkite, GitHub Actions}
-            \item\textbf{Virtualization: }{vagrant, docker, docker-compose}
-            \item\textbf{Solana: }{Solana Program Library, Metaplex Program Library, Address Lookup Tables и т.д.}
+            \item\textbf{CI/CD: }{buildkite, GitHub Actions, GitLab CI}
+            \item\textbf{Virtualization: }{vagrant, docker, docker-compose, Kubernetes/Helm}
+            \item\textbf{Solana: }{Anchor, Solana Program Library, Metaplex Program Library, Raydium CPI, Address Lookup Tables etc.}
             \item\textbf{Ethereum: }{solidity, truffle, hardhat}
             \item\textbf{Documentation: }{ Docosaurus, Pelican }
-            \item\textbf{Analytic and logs: }{ Prometheus, Elastic Search(Kebana), Google analytics, Matomo; \emph{\href{https://vector.dev/}{\color{blue}Vector}} }
+            \item\textbf{Analytic and logs: }{ Prometheus, Grafana, Elastic Search(Kibana), Google analytics, Matomo; \emph{\href{https://vector.dev/}{\color{blue}Vector}} }
         \end{itemize}
         \textbf{Foreign languages:}{ English B2 Upper Intermediate } 
     }}
@@ -219,10 +219,49 @@ Able to establish processes and manage small team. I'm looking for company of ha
 \section{Employment History}
   \vspace{3pt}
   \resumeSubHeadingListStart
-    
+
+    \resumeSubheading
+        {\emph{\href{https://xyber.inc}{\color{blue}Xyber Labs}}}{International}
+        {Senior Staff Engineer aka \emph{\href{https://keys.openpgp.org/vks/v1/by-fingerprint/3D98A0A1465491FAFC2047F719A3D3B094F4AD25}{\color{blue}XyKeeper}}}{Feb 2025 \textbf{--} Present}
+        \resumeItemListStart
+            \resumeItem{\textbf{Xyber Platform.} AI Agent and MCP server management platform. Base architecture design described as scenarios: Infrastructure Layer (TEE), Agent Layer (cascade interaction, credit economy). \emph{\href{https://prezi.com/p/yxvaegy4nou1/authentic/?present=1}{\color{blue}Presentation}}.}
+            \resumeItem{\textbf{\emph{\href{https://github.com/Xyber-Labs/0-100-Solana-contracts}{\color{blue}0-100 Engine}} \& Income Dispatcher.} Architecture design and Solana smart contract implementation for agent tokenomics. Raydium CPI integration.}
+            \resumeItem{\textbf{\emph{\href{https://github.com/Xyber-Labs/xyber-genesis-sale}{\color{blue}Xyber Genesis Sale}}.} Smart contract development and sale execution (Fully Refunded).}
+            \resumeItem{\textbf{\emph{\href{https://github.com/Xyber-Labs/onchain-xyber-points}{\color{blue}Onchain Xyber Points}}.} On-chain points system, Xyber Staking, and related contracts.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+        {\emph{\href{https://entangle.fi/}{\color{blue}Entangle Ltd.}}}{International}
+        {Senior Rust Developer $\rightarrow$ Senior Staff Engineer}{Feb 2024 \textbf{--} Feb 2025}
+        \resumeItemListStart
+            \resumeItem{\textbf{Cross Chain Messaging / UIP.} Solana smart contracts (gov-protocol), executor backend~--- receiving cross-chain messages, loading to Solana, initiating execution and control. Transmitter~--- event capture and relay to intermediate chain. New network onboarding and support.}
+            \resumeItem{\textbf{Tron \& TON Executor/Transmitter.} TON cell tree decryption and data structure handling, transaction preparation, execution control.}
+            \resumeItem{\textbf{UTS (Universal Token Standard).} Architecture design and smart contract implementation.}
+            \resumeItem{\textbf{UDF (Universal Data Feeds).} Solana oracle smart contract. Rust plugin for Go backend integration via FFI (cgo).}
+            \resumeItem{\textbf{\emph{\href{https://genomeprotocol.com/}{\color{blue}Genome}} project group.} On-chain tournament and competition support for gaming platforms (Minecraft, World of Tanks). Contractor management, requirements engineering, team coordination, code review. Genome and Genome Sale smart contracts.}
+            \resumeItem{\textbf{Rust Unit Standards.} Developed coding standards for the Rust unit. Led a team of 5 Rust developers.}
+            \resumeItem{\textbf{Infrastructure.} Helm chart configuration, pod deployment for new protocols, Grafana monitoring and incident resolution, GitLab CI/CD.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+        {\emph{\href{https://picodata.io/}{\color{blue}Picodata}}}{Russia}
+        {Senior Rust Developer}{2023 \textbf{--} Feb 2024}
+        \resumeItemListStart
+            \resumeItem{Development of a large-scale banking application based on Tarantool database. Rust, Lua.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+        {\emph{\href{http://itpo.group/}{\color{blue}ITPO group}}}{International, Dubai}
+        {Tokenomics and NFT management on \emph{\href{https://www.myseven.io/}{\color{blue}My Seven}} marketplace}{Dec 2022 \textbf{--} Jan 2024}
+        \resumeItemListStart
+            \resumeItem{Tokenomics endpoint development: minting, transfers, burning, etc.}
+            \resumeItem{NFT management endpoint development.}
+        \resumeItemListEnd
+        Rust, Solana Program Library, Metaplex Program Library.
+
     \resumeSubheading
         {\emph{\href{http://komodoproject.com/}{\color{blue}Komodo}}}{International, Amsterdam}
-        {\emph{\href{https://github.com/KomodoPlatform/komodo-defi-framework/}{\color{blue} komodo-defi-framework}} acting as multichain facilities of komodo Wallet and DEX}{Mar 2023 \textbf{--} Okt 2023} 
+        {\emph{\href{https://github.com/KomodoPlatform/komodo-defi-framework/}{\color{blue} komodo-defi-framework}} acting as multichain facilities of komodo Wallet and DEX}{Mar 2023 \textbf{--} Oct 2023} 
         \resumeItemListStart
             \resumeItem{\emph{\href{https://github.com/KomodoPlatform/komodo-defi-framework/tree/dev/mm2src/adex_cli}{\color{blue}komodefi-cli}} a command line interface for the komoo defi platfrom, wallet and DEX }
             \resumeItem{\emph{\href{https://github.com/KomodoPlatform/komodo-defi-framework/tree/dev/mm2src/adex_cli}{\color{blue}mm2 service}} an intermediary service provides the komodo defi platform facilities }
